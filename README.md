@@ -8,11 +8,11 @@ every day,learning learing..docker
 - [Mysql](# Mysql Install)
 
 - [Docker](#docker)
-    - [Docker environment installation](#Docker environment installation)
+    - [DockerEnvironmentInstallation](#DockerEnvironmentInstallation)
 
 
 # docker
-## Docker environment installation
+## DockerEnvironmentInstallation
 - 1:Install yum-utils:
 ```shell
 yum install -y yum-utils device-mapper-persistent-data lvm2
