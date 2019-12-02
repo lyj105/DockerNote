@@ -61,11 +61,11 @@ docker push mysql:5.7
   create database mysql character set utf8
 ```
 - 8:Import the sql file into the database;
-```shell
+``shell
   show database;
   use mysql;
   source /mysql.sql
-```
+``
 - 9:Create a jim account and modify permissions so that any IP can access:
 grant all privileges on *.* to 'jim' @'%' identified by '123456';
 
