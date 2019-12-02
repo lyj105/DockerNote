@@ -12,6 +12,8 @@
     - [Examples](#examples)
 # DockerRegistry
 ## DockerRegistry2.0Building
-    
+```shell
+docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+```
 
 
