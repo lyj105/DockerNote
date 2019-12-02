@@ -81,19 +81,15 @@ grant all privileges on *.* to 'jim' @'%' identified by '123456';
 ```javascript
    docker run -p 8081:80 --name nginx -v /data/nginx/html:/usr/share/nginx/html -v /data/nginx/logs:/var/log/nginx  -d nginx:1.10
 ```
-- 2:First run the container (for copying the configuration file):
-```javascript
-   docker run -p 8081:80 --name nginx -v /data/nginx/html:/usr/share/nginx/html -v /data/nginx/logs:/var/log/nginx  -d nginx:1.10
-```
-- 3:Copy the configuration file in the container to the specified directory:
+- 2:Copy the configuration file in the container to the specified directory:
 ```javascript
   docker container cp nginx:/etc/nginx /data/nginx/
 ```
-- 4:Modify the file name
+- 3:Modify the file name
 ```javascript
-  docker container cp nginx:/etc/nginx /data/nginx/
+ mv nginx conf
 ```
-mv nginx conf
+
 
 
 
