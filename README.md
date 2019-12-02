@@ -70,7 +70,7 @@ docker push mysql:5.7
 - 9:Create a jim account and modify permissions so that any IP can access:
 grant all privileges on *.* to 'jim' @'%' identified by '123456';
 
-## Dginx
+## Nginx
 
 ### Download the docker image for nginx1.10:
 ```javascript
