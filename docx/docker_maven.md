@@ -1,2 +1,17 @@
-Study Note 
+[Study Note ]
+
+#Building Docker images for SpringBoot applications with Maven plugin
+#Docker
+
+> This aritcle mainly introduce how to use the maven plugin to package SpringBoot application as Docker images and upload them to the private image repository Docker Registry
+
+## Summary
+
+- [DockerRegistry](#DockerRegistry2.0Building)
+    - [Definition](#definition)
+    - [Examples](#examples)
+# DockerRegistry
+## DockerRegistry2.0Building
+    
+
 
