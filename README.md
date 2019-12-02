@@ -10,6 +10,7 @@ every day,learning learing..docker
 - [Docker](#docker)
     - [DockerEnvironmentInstallation](#DockerEnvironmentInstallation)
     - [MysqlInstall](#MysqlInstall)
+    - [Nginx](#Nginx)
 
 
 # docker
@@ -61,11 +62,40 @@ docker push mysql:5.7
   create database mysql character set utf8
 ```
 - 8:Import the sql file into the database;
-``shell
+```shell
   show database;
   use mysql;
   source /mysql.sql
-``
+```
 - 9:Create a jim account and modify permissions so that any IP can access:
 grant all privileges on *.* to 'jim' @'%' identified by '123456';
+
+## Dginx
+
+### Download the docker image for nginx1.10:
+```javascript
+  docker pull nginx:1.10
+```
+### Copy nginx configuration from the container
+- 1:First run the container (for copying the configuration file):
+```javascript
+   docker run -p 8081:80 --name nginx -v /data/nginx/html:/usr/share/nginx/html -v /data/nginx/logs:/var/log/nginx  -d nginx:1.10
+```
+- 2:First run the container (for copying the configuration file):
+```javascript
+   docker run -p 8081:80 --name nginx -v /data/nginx/html:/usr/share/nginx/html -v /data/nginx/logs:/var/log/nginx  -d nginx:1.10
+```
+- 3:Copy the configuration file in the container to the specified directory:
+```javascript
+  docker container cp nginx:/etc/nginx /data/nginx/
+```
+- 4:Modify the file name
+```javascript
+  docker container cp nginx:/etc/nginx /data/nginx/
+```
+mv nginx conf
+
+
+
+
 
