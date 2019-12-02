@@ -9,6 +9,7 @@ every day,learning learing..docker
 
 - [Docker](#docker)
     - [DockerEnvironmentInstallation](#DockerEnvironmentInstallation)
+    - [MysqlInstall](#MysqlInstall)
 
 
 # docker
@@ -30,7 +31,7 @@ yum install docker-ce
 ```shell
 systemctl start docker
 ```
-## Mysql Install
+## MysqlInstall
 - 1:Download the docker image for mysql5.7:
 ```shell
 docker push mysql:5.7
