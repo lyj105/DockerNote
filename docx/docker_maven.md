@@ -17,6 +17,6 @@ docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
 ```
 
 
-# docker opens Renote api access ()
+# docker opens Renote api access
   - [docker opens Renote api access blog](https://www.cnblogs.com/hongdada/p/11512901.html)
 
