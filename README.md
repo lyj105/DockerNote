@@ -90,6 +90,34 @@ grant all privileges on *.* to 'jim' @'%' identified by '123456';
  mv nginx conf
 ```
 
+## 容器监控之 cadvisor
+
+- 1:Install cadvisor
+```shell
+docker pull google/cadvisor:latest
+```
+- 2:docker run cadvisor 
+```shell
+sudo docker run \
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8080:8080 \
+  --detach=true \
+  --name=cadvisor \
+  google/cadvisor:latest
+```
+-- 3: from send https:
+```shell
+http://localhost:8080 
+ http://localhost:8080/metrics 
+  http://localhost:8080/docker
+```
+from ：
+https://www.jianshu.com/p/491e7a39d2b9
+https://github.com/google/cadvisor
 
 
 
