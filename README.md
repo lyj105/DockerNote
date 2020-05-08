@@ -28,7 +28,7 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 yum install docker-ce
 yum install docker-ce
 ```
--4: start Docker:
+- 4: start Docker:
 ```shell
 systemctl start docker
 ```
@@ -90,7 +90,7 @@ grant all privileges on *.* to 'jim' @'%' identified by '123456';
  mv nginx conf
 ```
 
-## 容器监控之 cadvisor
+## Container monitoring cadvisor
 
 - 1:Install cadvisor
 ```shell
@@ -109,7 +109,7 @@ sudo docker run \
   --name=cadvisor \
   google/cadvisor:latest
 ```
--- 3: from send https:
+- 3: from send https
 ```shell
 http://localhost:8080 
  http://localhost:8080/metrics 
