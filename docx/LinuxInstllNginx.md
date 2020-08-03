@@ -1,4 +1,5 @@
 # LinuxInstallNginx
+from:https://www.cnblogs.com/cl-rr/p/11447231.html
 **1：Download the installation file path address**
 nginx official download address:http://nginx.org/en/download.html
 fileName:nginx-1.14.2
@@ -29,4 +30,14 @@ OpenSSL library
 
 
 
+
+
+
+
+
+
+* 5 If the above method still shows that make fails, then take the following method
+Update yum
+ #yum update
+After the update is complete, delete the nginx package that was previously prepared for make, and then unzip it again.
 
